@@ -1,3 +1,15 @@
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container-style {
+    @apply max-w-[1200px] mx-auto;
+  }
+
+  .header-button-style {
+    @apply p-5 text-[18px] font-semibold text-[#0f1317];
+  }
+}
