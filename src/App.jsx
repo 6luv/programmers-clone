@@ -2,6 +2,7 @@ import Category from "./components/Category";
 import EducationSection from "./components/EducationSection";
 import Header from "./components/Header";
 import SlideBanner from "./components/SlideBanner";
+import LectureSection from "./components/LectureSection";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <SlideBanner />
       <Category />
       <EducationSection />
+      <LectureSection />
     </div>
   );
 };

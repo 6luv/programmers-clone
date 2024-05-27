@@ -1,7 +1,7 @@
 const EducationCard = ({ image, title }) => {
   return (
     <div className="h-auto max-w-[370px] mt-10 flex flex-col">
-      <img src={`images/educations/${image}.png`} className="rounded-t-xl" />
+      <img src={`${image}.png`} className="rounded-t-xl" />
       <div className="p-6 border-[1px] border-[#dce1e5] rounded-b-xl flex flex-col justify-between flex-grow">
         <div className="mb-6">
           <h3 className="mb-4 text-programmers-main font-bold text-[18px]">
