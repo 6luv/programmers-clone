@@ -11,13 +11,13 @@ const PositionCard = ({ image, position, company }) => {
           <div className="font-bold mb-1">{position}</div>
           <div className="text-[#2c323b] text-sm">{company}</div>
         </div>
-        <div className="flex items-center text-sm text-[#667380] ">
+        <div className="flex items-center text-sm text-main-content-gray">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            className="h-4 w-4 text-[#667380] mr-2"
+            className="h-4 w-4 text-main-content-gray mr-2"
           >
             <path
               fill="currentColor"

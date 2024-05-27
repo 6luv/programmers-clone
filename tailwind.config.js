@@ -6,6 +6,7 @@ export default {
       colors: {
         "programmers-main": "#0f1317",
         "footer-content-gray": "#98a8b9",
+        "main-content-gray": "#667380",
       },
     },
     fontFamily: {

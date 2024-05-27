@@ -23,7 +23,7 @@ const EducationCard = ({
                   <div className="font-medium ">D-25</div>
                 </div>
               ) : (
-                <div className="flex py-1 px-[6px] rounded-[4px] text-xs text-[#667380] bg-[#dce1e5]">
+                <div className="flex py-1 px-[6px] rounded-[4px] text-xs text-main-content-gray bg-[#dce1e5]">
                   <div className="font-medium ">모집 마감</div>
                 </div>
               )}
@@ -41,7 +41,7 @@ const EducationCard = ({
         <div className="flex justify-between items-center pt-4 mt-auto border-t border-[#dce1e5]">
           <div className="text-programmers-main font-bold">무료</div>
           {hasRating && (
-            <div className="flex items-center px-[6px] py-1 text-[#667380] bg-[#edeff2] rounded-[4px] font-normal">
+            <div className="flex items-center px-[6px] py-1 text-main-content-gray bg-[#edeff2] rounded-[4px] font-normal">
               <div className="text-[11px] mr-1">★</div>
               <div className="text-sm">5</div>
             </div>
