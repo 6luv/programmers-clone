@@ -1,25 +1,31 @@
 const Footer = () => {
   return (
-    <div className="max-w-[1160px] w-full mx-auto mt-[142px] mb-16 text-sm">
+    <div className="container-style mt-[142px] mb-16 text-sm">
       <div className="flex justify-between items-start">
         <div className="flex">
           <div className="mr-10">
             <div className="text-[#44576c] mb-4 font-semibold">서비스</div>
-            <div className="text-[#98a8b9] mb-1">개발자용 프로그래머스</div>
-            <div className="text-[#98a8b9]">기업용 프로그래머스</div>
+            <div className="text-footer-content-gray mb-1">
+              개발자용 프로그래머스
+            </div>
+            <div className="text-footer-content-gray">기업용 프로그래머스</div>
           </div>
           <div className="mr-10">
             <div className="text-[#44576c] mb-4 font-semibold">문의</div>
-            <div className="text-[#98a8b9] mb-1">FAQ/문의</div>
-            <div className="text-[#98a8b9]">교육 결제, 환불 관련 문의</div>
+            <div className="text-footer-content-gray mb-1">FAQ/문의</div>
+            <div className="text-footer-content-gray">
+              교육 결제, 환불 관련 문의
+            </div>
           </div>
           <div className="mr-10">
             <div className="text-[#44576c] mb-4 font-semibold">고객센터</div>
-            <div className="text-[#98a8b9] mb-1">대표번호: 1533-1886</div>
-            <div className="text-[#98a8b9] text-xs">
+            <div className="text-footer-content-gray mb-1">
+              대표번호: 1533-1886
+            </div>
+            <div className="text-footer-content-gray text-xs">
               운영시간: 오전 9시 ~ 오후 6시(주말 및 공휴일 휴무)
             </div>
-            <div className="text-[#98a8b9] text-xs">
+            <div className="text-footer-content-gray text-xs">
               점심시간: 오후 12시 ~ 오후 1시
             </div>
           </div>
@@ -38,10 +44,10 @@ const Footer = () => {
         </button>
       </div>
       <div className="mt-12">
-        <div className="mb-2 text-[#98a8b9] text-[13px] font-semibold">
+        <div className="mb-2 text-footer-content-gray text-[13px] font-semibold">
           2024 프로그래머스
         </div>
-        <div className="text-[#98a8b9] text-[13px] max-w-[900px] w-full">
+        <div className="text-footer-content-gray text-[13px] max-w-[900px] w-full">
           (주)그렙 / 대표 임성수 / 서울특별시 서초구 강남대로 327, 2층
           프로그래머스(서초동, 대륭서초타워) / 사업자등록번호 220-88-75699 /
           통신판매업신고 제 2014-서울강남-03241호 / 직업정보제공사업 신고번호
@@ -55,8 +61,8 @@ const Footer = () => {
           <div className="text-[#44576c] font-medium mr-4">
             개인정보처리방침
           </div>
-          <div className="text-[#98a8b9] mr-4">이용약관</div>
-          <div className="text-[#98a8b9]">프로그래머스 인재 채용</div>
+          <div className="text-footer-content-gray mr-4">이용약관</div>
+          <div className="text-footer-content-gray">프로그래머스 인재 채용</div>
         </div>
         <div className="flex items-center">
           <svg

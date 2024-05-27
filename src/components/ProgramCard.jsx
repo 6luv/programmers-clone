@@ -22,7 +22,7 @@ const ProgramCard = ({ image, title, dateOfReceipt, examDate }) => {
             <div className="text-[#667380]">{examDate}</div>
           </div>
         </div>
-        <button className="py-4 px-[19px] text-programmers-main bg-[#f5f6f7] rounded-md mt-6">
+        <button className="font-medium py-4 px-[19px] text-programmers-main bg-[#f5f6f7] rounded-md mt-6">
           자세히 보기
         </button>
       </div>

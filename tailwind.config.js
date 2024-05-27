@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "programmers-main": "#0f1317",
+        "footer-content-gray": "#98a8b9",
       },
     },
     fontFamily: {

@@ -57,12 +57,11 @@ const Header = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="none"
                 viewBox="0 0 24 24"
-                className="OneDepthNavItemstyle__StyledIcLaunch-sc-4cmp4x-0 bnJBSh"
+                className="text-[#84919e]"
               >
                 <path
-                  fill="#000"
+                  fill="currentColor"
                   fillRule="evenodd"
                   d="M17 17H7V7h5V5H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10c1.1 0 2-.9 2-2v-5h-2zM14 3v2h3.59l-7.83 7.83 1.41 1.41L19 6.41V10h2V3z"
                   clipRule="evenodd"
@@ -72,9 +71,9 @@ const Header = () => {
           </nav>
         </div>
         <div className="pr-2 lg:pr-0">
-          <div className="hidden lg:flex ">
+          <div className="hidden lg:flex font-medium">
             <button className="mr-4">로그인</button>
-            <button className="">기업서비스</button>
+            <button>기업서비스</button>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

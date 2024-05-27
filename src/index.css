@@ -6,14 +6,10 @@
 
 @layer components {
   .container-style {
-    @apply max-w-screen-xl mx-auto;
+    @apply max-w-[1200px] w-full mx-auto;
   }
 
   .header-button-style {
-    @apply p-5 text-[18px] font-semibold text-programmers-main;
-  }
-
-  .slide-banner-style {
-    @apply max-w-[1160px] mx-auto;
+    @apply p-5 text-[18px] font-medium text-programmers-main;
   }
 }

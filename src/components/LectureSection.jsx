@@ -28,7 +28,7 @@ const LectureSection = () => {
   return (
     <section>
       <TitleBar title="추천 강의" />
-      <div className="max-w-[1160px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+      <div className="container-style grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {LectureData.map((v) => (
           <EducationCard
             key={v.id}

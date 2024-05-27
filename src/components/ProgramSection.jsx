@@ -22,7 +22,7 @@ const ProgramSection = () => {
   return (
     <section>
       <TitleBar title="채용 프로그램" />
-      <div className="max-w-[1160px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2 justify-items-center">
+      <div className="container-style grid grid-cols-1 lg:grid-cols-2 justify-items-center">
         {ProgramData.map((v) => (
           <ProgramCard
             key={v.id}
