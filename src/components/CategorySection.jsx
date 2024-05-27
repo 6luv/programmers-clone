@@ -1,15 +1,15 @@
 import CategoryCard from "./CategoryCard";
+import CategoryData from "../data/categoryData.json";
 
-const CategoryData = [
+const SvgData = [
   {
-    id: "1",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
         viewBox="0 0 24 24"
-        className="h-24 w-24"
+        className="w-8 h-8"
       >
         <path
           fill="#2C323B"
@@ -19,10 +19,8 @@ const CategoryData = [
         ></path>
       </svg>
     ),
-    title: "무료 국비 강의",
   },
   {
-    id: "2",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +28,7 @@ const CategoryData = [
         height="32"
         fill="none"
         viewBox="0 0 32 32"
-        className="h-24 w-24"
+        className="w-8 h-8"
       >
         <path
           fill="#2C323B"
@@ -40,10 +38,8 @@ const CategoryData = [
         ></path>
       </svg>
     ),
-    title: "코딩테스트 문제",
   },
   {
-    id: "3",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +47,7 @@ const CategoryData = [
         height="24"
         fill="none"
         viewBox="0 0 24 24"
-        className="h-24 w-24"
+        className="w-8 h-8"
       >
         <path
           fill="#000"
@@ -59,10 +55,8 @@ const CategoryData = [
         ></path>
       </svg>
     ),
-    title: "수강 중인 강의",
   },
   {
-    id: "4",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +64,7 @@ const CategoryData = [
         height="24"
         fill="none"
         viewBox="0 0 24 24"
-        className="h-24 w-24"
+        className="w-8 h-8"
       >
         <path
           fill="#000"
@@ -81,10 +75,8 @@ const CategoryData = [
         <path fill="#000" d="M9 10h6v2H9z"></path>
       </svg>
     ),
-    title: "채용 공고",
   },
   {
-    id: "5",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +84,7 @@ const CategoryData = [
         height="24"
         fill="none"
         viewBox="0 0 24 24"
-        className="h-24 w-24"
+        className="w-8 h-8"
       >
         <path
           fill="#000"
@@ -100,10 +92,8 @@ const CategoryData = [
         ></path>
       </svg>
     ),
-    title: "채용 프로그램",
   },
   {
-    id: "6",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +101,7 @@ const CategoryData = [
         height="24"
         fill="none"
         viewBox="0 0 24 24"
-        className="h-24 w-24"
+        className="w-8 h-8"
       >
         <path
           fill="#000"
@@ -121,10 +111,8 @@ const CategoryData = [
         ></path>
       </svg>
     ),
-    title: "스킬체크",
   },
   {
-    id: "7",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +120,7 @@ const CategoryData = [
         height="24"
         fill="none"
         viewBox="0 0 24 24"
-        className="h-24 w-24"
+        className="w-8 h-8"
       >
         <path
           fill="#000"
@@ -142,20 +130,19 @@ const CategoryData = [
         ></path>
       </svg>
     ),
-    title: "코딩역량인증시험",
   },
 ];
 
-const Categoty = () => {
+const CategotySection = () => {
   return (
     <div className="mt-12">
       <div className="flex items-center justify-center">
-        {CategoryData.map((v) => (
-          <CategoryCard key={v.id} icon={v.icon} title={v.title} />
+        {CategoryData.map((v, i) => (
+          <CategoryCard key={v.id} icon={SvgData[i].icon} title={v.title} />
         ))}
       </div>
     </div>
   );
 };
 
-export default Categoty;
+export default CategotySection;

@@ -1,4 +1,4 @@
-import Category from "./components/Category";
+import CategorySection from "./components/CategorySection";
 import EducationSection from "./components/EducationSection";
 import Header from "./components/Header";
 import SlideBanner from "./components/SlideBanner";
@@ -12,7 +12,7 @@ const App = () => {
     <div className="font-noto-sans-kr">
       <Header />
       <SlideBanner />
-      <Category />
+      <CategorySection />
       <EducationSection />
       <LectureSection />
       <ProgramSection />
