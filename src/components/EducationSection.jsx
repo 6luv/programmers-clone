@@ -29,7 +29,7 @@ const EducationSection = () => {
   return (
     <section>
       <TitleBar title="국비지원으로 개발자 커리어 시작!" />
-      <div className="w-[1160px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+      <div className="max-w-[1160px] w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
         {EducationData.map((v) => (
           <EducationCard key={v.id} image={v.image} title={v.title} />
         ))}
