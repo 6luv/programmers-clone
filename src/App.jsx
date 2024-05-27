@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import SlideBanner from "./components/SlideBanner";
 import LectureSection from "./components/LectureSection";
 import ProgramSection from "./components/ProgramSection";
+import PositionSection from "./components/PositionSection";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <EducationSection />
       <LectureSection />
       <ProgramSection />
+      <PositionSection />
     </div>
   );
 };
