@@ -47,7 +47,7 @@ const Header = () => {
               ></path>
             </svg>
           </div>
-          <nav className="flex">
+          <nav className="flex text-programmers-main">
             <button className="header-button-style">교육</button>
             <button className="header-button-style">채용</button>
             <button className="header-button-style">코딩테스트</button>

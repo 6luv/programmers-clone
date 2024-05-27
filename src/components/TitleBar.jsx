@@ -1,7 +1,7 @@
 const TitleBar = ({ title }) => {
   return (
     <section className="w-[1160px] mt-14 flex justify-between mx-auto">
-      <div className="text-[#0f1317] text-[26px] font-bold">{title}</div>
+      <div className="text-programmers-main text-[26px] font-bold">{title}</div>
       <button className="flex items-center text-[#667380] font-bold">
         더 보기
         <svg
