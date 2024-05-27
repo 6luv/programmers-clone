@@ -53,7 +53,7 @@ const SlideBanner = () => {
           />
         ))}
       </Slider>
-      <div className="absolute bottom-[60px] left-[330px] -translate-x-1/2">
+      <div className="absolute bottom-[60px] left-[450px] -translate-x-1/2">
         <div className="flex rounded-[100px] text-white bg-[#2c323b] font-normal py-1 px-2">
           <button onClick={onClickPrev}>
             <svg
