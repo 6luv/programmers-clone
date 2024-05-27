@@ -5,6 +5,7 @@ import SlideBanner from "./components/SlideBanner";
 import LectureSection from "./components/LectureSection";
 import ProgramSection from "./components/ProgramSection";
 import PositionSection from "./components/PositionSection";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <LectureSection />
       <ProgramSection />
       <PositionSection />
+      <Footer />
     </div>
   );
 };
