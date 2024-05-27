@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 const Footer = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const onClickDropDown = () => {
+    setIsClicked(!isClicked);
+  };
+
   return (
     <div className="container-style mt-[142px] mb-16 text-sm">
       <div className="flex justify-between items-start">
@@ -30,18 +38,31 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <button className="flex items-center text-xs border-[1px] border-[#d7e2eb] rounded-[3.2px] p-1">
-          패밀리사이트
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="8"
-            height="5"
-            fill="none"
-            className="ml-1"
+        <div>
+          <button
+            className={`relative flex items-center text-xs border-[1px] border-[#d7e2eb] rounded-[3.2px] p-1 ${
+              isClicked ? "bg-[#e9ecf3] text-[#263747]" : "bg-white text-black"
+            }`}
+            onClick={onClickDropDown}
           >
-            <path fill="#263747" d="m4 4.866-4-4h8z"></path>
-          </svg>
-        </button>
+            패밀리사이트
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="5"
+              fill="none"
+              className="ml-1"
+            >
+              <path fill="#263747" d="m4 4.866-4-4h8z"></path>
+            </svg>
+          </button>
+          {isClicked && (
+            <ol className="absolute flex flex-col justify-center items-start text-[#212529] w-[120px] text-xs border-[1px] border-[#e9ecf3] mt-[2px] py-2 rounded-[4px] shadow-lg">
+              <li className="py-1 px-6 w-full">그렙</li>
+              <li className="py-1 px-6 w-full">모니토</li>
+            </ol>
+          )}
+        </div>
       </div>
       <div className="mt-12">
         <div className="mb-2 text-footer-content-gray text-[13px] font-semibold">
