@@ -1,4 +1,4 @@
-const EducationCard = ({ image, title }) => {
+const EducationCard = ({ image, title, isInProgress, hasRating }) => {
   return (
     <div className="h-auto max-w-[370px] mt-10 flex flex-col">
       <img src={`${image}.png`} className="rounded-t-xl" />
@@ -8,9 +8,17 @@ const EducationCard = ({ image, title }) => {
             {title}
           </h3>
           <div className="flex flex-wrap gap-2">
-            <div className="py-1 px-[6px] rounded-[4px] font-medium text-xs text-[#0078ff] bg-[#ebf5ff]">
-              모집 중 | D-25
-            </div>
+            {isInProgress ? (
+              <div className="flex py-1 px-[6px] rounded-[4px] text-xs text-[#0078ff] bg-[#ebf5ff]">
+                <div className="font-medium ">모집 중</div>
+                <div className="px-1 text-gray-300">|</div>
+                <div className="font-medium ">D-25</div>
+              </div>
+            ) : (
+              <div className="flex py-1 px-[6px] rounded-[4px] text-xs text-[#667380] bg-[#dce1e5]">
+                <div className="font-medium ">모집 마감</div>
+              </div>
+            )}
             <div className="py-1 px-[6px] rounded-[4px] font-medium text-xs text-[#ff850a] bg-[#fff7de]">
               오픈 알림 신청
             </div>
@@ -19,8 +27,14 @@ const EducationCard = ({ image, title }) => {
             </div>
           </div>
         </div>
-        <div className="pt-4 mt-auto text-programmers-main font-bold border-t border-[#dce1e5]">
-          무료
+        <div className="flex justify-between items-center pt-4 mt-auto border-t border-[#dce1e5]">
+          <div className="text-programmers-main font-bold">무료</div>
+          {hasRating && (
+            <div className="flex items-center px-[6px] py-1 text-[#667380] bg-[#edeff2] rounded-[4px] font-normal">
+              <div className="text-[11px] mr-1">★</div>
+              <div className="text-sm">5</div>
+            </div>
+          )}
         </div>
       </div>
     </div>
